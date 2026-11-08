@@ -1,0 +1,324 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #1d4ed8;
+}
+
+header p {
+  color: #64748b;
+}
+
+.summary {
+  background: #2563eb;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.summary h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.form-section,
+.list-section {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+button {
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.expense {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.expense h3 {
+  margin: 0 0 5px;
+}
+
+.expense p {
+  color: #64748b;
+  margin: 0;
+}
+
+.expense strong {
+  color: #2563eb;
+}
+
+button.delete {
+  background: #ef4444;
+}
+
+button.delete:hover {
+  background: #dc2626;
+}
+
+.empty {
+  color: #64748b;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 15px auto;
+  }
+
+  .expense {
+    flex-wrap: wrap;
+  }
+}
+
+button.edit {
+  background: #16a34a;
+}
+
+button.edit:hover {
+  background: #15803d;
+}
+
+button.cancel {
+  background: #64748b;
+}
+
+button.cancel:hover {
+  background: #475569;
+}
+.summary h2 {
+  color: white;
+}
+.chart-section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-section h2 {
+  margin-bottom: 20px;
+}
+
+.chart-item {
+  margin-bottom: 18px;
+}
+
+.chart-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.chart-bar {
+  width: 100%;
+  height: 14px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chart-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+.budget-section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.budget-section h2 {
+  margin-bottom: 15px;
+}
+
+.budget-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+}
+.progress-bar {
+  width: 100%;
+  height: 16px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #16a34a;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+.filter-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.filter-row div {
+  flex: 1;
+  min-width: 0;
+}
+
+.filter-row label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.filter-row select {
+  width: 100%;
+  box-sizing: border-box;
+}
+.list-section > label {
+  display: block;
+  text-align: left;
+}
+
+.list-section > select {
+  display: block;
+  width: 200px;
+  margin-right: auto;
+  margin-left: 0;
+}
+.list-section > label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.list-section > select,
+.list-section > input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+.list-section button[onClick] {
+  background-color: #64748b;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.insights-section {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.insights-section h2 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.insights-section p {
+  color: #555;
+  margin-top: 12px;
+}
+
+.insights-section h3 {
+  color: #222;
+  margin-top: 5px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 18px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-weight: bold;
+}
